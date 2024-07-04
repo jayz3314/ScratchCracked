@@ -1,0 +1,19 @@
+{
+    "name": "ScratchCracked",
+    "version": "0.1",
+    "description": "Customise Scratch YOUR way!",
+    "manifest_version": 2,
+
+    "options_ui": {
+        // Required.
+        "page": "/options/options.html",
+
+        "js": "options.js", // the file i'm trying to add (for fun)
+
+    },
+    "content_scripts": [{
+        "js": ["mainscripts.js"],
+        "css": ["maincss.css"],
+        "matches": ["http://scratch.mit.edu/*", "https://scratch.mit.edu/*"]
+    }]
+}
